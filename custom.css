@@ -1,16 +1,23 @@
-/* 强制放大所有缩略图 */
+/* 1. 强制让所有缩略图变大 */
 #media li img {
-    width: 500px !important;
-    height: 500px !important;
+    width: 400px !important;
+    height: 400px !important;
     max-width: none !important;
     object-fit: cover;
 }
 
-/* 让每个图片项也变大，避免被外层容器限制 */
+/* 2. 让包裹图片的 li 也变大，避免被裁切 */
 #media li {
-    width: 500px !important;
-    height: 500px !important;
-    display: inline-block;
-    margin: 8px;
-    overflow: hidden;
+    width: 400px !important;
+    height: 400px !important;
+    display: inline-block !important;
+    margin: 8px !important;
+    overflow: hidden !important;
+}
+
+/* 3. 如果外面还有 a 标签，也要放开限制 */
+#media li a {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
 }
