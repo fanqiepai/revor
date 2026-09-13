@@ -1,4 +1,9 @@
-.mosaic .item {
-    width: 400px !important;
-    height: 400px !important;
+.gallery img,
+.gallery-item img,
+.thumbnail img,
+.item img {
+    width: 500px !important;
+    height: 500px !important;
+    object-fit: cover;
+    max-width: none;
 }
