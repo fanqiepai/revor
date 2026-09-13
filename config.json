@@ -6,7 +6,12 @@
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
-  "theme": "mosaic",
+  "theme": "theme": {
+  "name": "mosaic",
+  "options": {
+    "thumbnail-size": 400
+  }
+},
   "css": "./custom.css",
   "footer": "Copyright © 2026 aassdd. All rights reserved.",
   "usage-stats": false
