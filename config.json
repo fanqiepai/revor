@@ -6,10 +6,10 @@
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
-  "theme": "theme": {
+  "theme":  {
   "name": "mosaic",
   "options": {
-    "thumbnail-size": 400
+    "thumbnail-size": 500
   }
 },
   "css": "./custom.css",
