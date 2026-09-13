@@ -1,15 +1,15 @@
 /* 1. 强制让所有缩略图变大 */
 #media li img {
-    width: 400px !important;
-    height: 400px !important;
+    width: 300px !important;
+    height: 300px !important;
     max-width: none !important;
     object-fit: cover;
 }
 
 /* 2. 让包裹图片的 li 也变大，避免被裁切 */
 #media li {
-    width: 400px !important;
-    height: 400px !important;
+    width: 300px !important;
+    height: 300px !important;
     display: inline-block !important;
     margin: 8px !important;
     overflow: hidden !important;
@@ -21,3 +21,18 @@
     width: 100% !important;
     height: 100% !important;
 }
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 等一秒，确保 lightGallery 和图片都加载完
+    setTimeout(function() {
+        document.querySelectorAll('#media li img').forEach(function(img) {
+            // 把 thumbs 替换成 large
+            img.src = img.src.replace('/thumbs/', '/large/');
+            // 恢复成不写死尺寸，由 CSS 控制
+            img.removeAttribute('width');
+            img.removeAttribute('height');
+        });
+    }, 1000);
+});
+</script>
