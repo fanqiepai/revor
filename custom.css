@@ -1,9 +1,16 @@
-.gallery img,
-.gallery-item img,
-.thumbnail img,
-.item img {
+/* 强制放大所有缩略图 */
+#media li img {
     width: 500px !important;
     height: 500px !important;
+    max-width: none !important;
     object-fit: cover;
-    max-width: none;
+}
+
+/* 让每个图片项也变大，避免被外层容器限制 */
+#media li {
+    width: 500px !important;
+    height: 500px !important;
+    display: inline-block;
+    margin: 8px;
+    overflow: hidden;
 }
