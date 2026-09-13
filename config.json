@@ -6,7 +6,7 @@
   "sort-media-by": "filename",
   "download-photos": "copy",
   "cleanup": true,
-  "theme": "mosaic",
+  "theme": "card",
   "css": "./custom.css",
   "footer": "Copyright © 2026 aassdd. All rights reserved.",
   "usage-stats": false
